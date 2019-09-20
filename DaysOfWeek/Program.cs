@@ -10,19 +10,26 @@ namespace DaysOfWeek
             {
                 "Monday",
                 "Tuesday",
-                "Wednesday",
+                "Wensday", // badly spelled wednesday
                 "Thursday",
                 "Friday",
                 "Saturday",
                 "Sunday"
             };
 
-            Console.WriteLine("Which day do you want to display?");
-            Console.WriteLine("(Monday = 1, etc.) > ");
-            int iDay = int.Parse(Console.ReadLine());
+            foreach (string day in daysOfWeek)
+            {
+                Console.WriteLine(day);
+            }
 
-            string chosenDay = daysOfWeek[iDay - 1];
-            Console.WriteLine($"That day is: {chosenDay}");
+            Console.WriteLine();
+
+            daysOfWeek[2] = "Wednesday"; //fixing the typo
+
+            foreach(string day in daysOfWeek)
+            {
+                Console.WriteLine(day);
+            }
         }
     }
 }
