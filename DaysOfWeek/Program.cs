@@ -17,12 +17,12 @@ namespace DaysOfWeek
                 "Sunday"
             };
 
-// Simplest way to enumerate over the array's elements
-            foreach(string day in daysOfWeek)
-            {
-                Console.WriteLine(day);
-            }
+            Console.WriteLine("Which day do you want to display?");
+            Console.WriteLine("(Monday = 0, Sunday = 6, etc.) > ");
+            int iDay = int.Parse(Console.ReadLine());
 
+            string chosenDay = daysOfWeek[iDay];
+            Console.WriteLine($"That day is: {chosenDay}");
         }
     }
 }
