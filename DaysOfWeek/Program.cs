@@ -18,10 +18,10 @@ namespace DaysOfWeek
             };
 
             Console.WriteLine("Which day do you want to display?");
-            Console.WriteLine("(Monday = 0, Sunday = 6, etc.) > ");
+            Console.WriteLine("(Monday = 1, etc.) > ");
             int iDay = int.Parse(Console.ReadLine());
 
-            string chosenDay = daysOfWeek[iDay];
+            string chosenDay = daysOfWeek[iDay - 1];
             Console.WriteLine($"That day is: {chosenDay}");
         }
     }
