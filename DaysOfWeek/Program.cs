@@ -16,6 +16,13 @@ namespace DaysOfWeek
                 "Saturday",
                 "Sunday"
             };
+
+// Simplest way to enumerate over the array's elements
+            foreach(string day in daysOfWeek)
+            {
+                Console.WriteLine(day);
+            }
+
         }
     }
 }
